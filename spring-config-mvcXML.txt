@@ -1,0 +1,11 @@
+﻿	<!-- Spring MVC Annotation -->
+	<context:annotation-config />
+	<mvc:annotation-driven/>
+	
+	<!-- cấu hình view -->
+	<bean id="viewResolver" 
+		p:prefix="/WEB-INF/views/" p:suffix=".jsp"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
+   	
+   	<!-- cấu hình controller -->
+	<context:component-scan base-package="com.eshop.controller"/>
